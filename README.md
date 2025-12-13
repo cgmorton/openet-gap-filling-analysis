@@ -2,70 +2,38 @@
 
 
 
-### Gap Filling Methods
+## Gap Filling Methods
 
-interpolate
-: Simple linear interpolation
+| Name | Description |
+| - | - |
+| interpolate | Simple linear interpolation |
+| climo_mean | Monthly climatology computed using the mean |
+| climo_median | Monthly climatology computed using the median |
+| conor | Conor's method |
+| interp_clim_a | Simple mean of the interpolated and mean climatology |
+| interp_clim_b | Weighted mean of the interpolated value and climatology, where the climatology is weighted based on the number of months used to compute the climatology |
+| interp_clim_c | Simple mean of the interpolated and median climatology |
+| whit_a_0p50 | Whittaker-Eilers smoothing with a lambda term of 0.5 |
+| whit_a_0p20 | Whittaker-Eilers smoothing with a lambda term of 0.2 |
+| whit_a_0p10 | Whittaker-Eilers smoothing with a lambda term of 0.1 |
+| whit_a_0p05 | Whittaker-Eilers smoothing with a lambda term of 0.05 |
+| whit_a_0p01 | Whittaker-Eilers smoothing with a lambda term of 0.01 |
 
-climo_mean
-: Monthly climatology computed using the mean
+## Summary Statistics
 
-climo_median
-: Monthly climatology computed using the median
+| Name | Description |
+| - | - |
+| rmse | Root mean squared error |
+| mae | Mean absolute error |
+| mbe | Mean bias error |
+| m | Slope of the best fit regression line |
+| b | Intercept of the best fit regression line |
+| r2 | Coefficient of determination (R2) of the best fit regression line |
+| n | Number of test points |
 
-conor
-: Conor's method
+## Output Example
 
-interp_clim_a
-: Simple mean of the interpolated and mean climatology 
-
-interp_clim_b
-: Weighted mean of the interpolated value and climatology, where the climatology is weighted based on the number of months used to computed the climatology
-
-interp_clim_c
-: Simple mean of the interpolated and median climatology 
-
-whit_a_0p50
-: Whittaker-Eilers smoothing with a lambda term of 0.5
-
-whit_a_0p20
-: Whittaker-Eilers smoothing with a lambda term of 0.2
-
-whit_a_0p10
-: Whittaker-Eilers smoothing with a lambda term of 0.1
-
-whit_a_0p05
-: Whittaker-Eilers smoothing with a lambda term of 0.05
-
-whit_a_0p01
-: Whittaker-Eilers smoothing with a lambda term of 0.01
-
-### Summary Statistics
-
-rmse
-: Root mean squared error
-
-mae
-: Mean absolute error
-
-mbe
-: Mean bias error
-
-m
-: Slope of the best fit regression line
-
-b
-: Intercept of the best fit regression line
-
-r2
-: Coefficient of determination (R2) of the best fit regression line
-
-n
-: Number of test points
-
-### Output Example
-
-Example of summary statistics for all sampling points:
+Example of summary statistics output for all sampling points:
 
 ```
 Randomly drop one datapoint during the year
